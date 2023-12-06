@@ -154,7 +154,7 @@ function mini-u {
     [bool]$global:back = $false
     [bool]$global:quit = $false
     [bool]$global:execute = $false
-    $MainMenu = (Get-Content .\menus\MainMenu.json | ConvertFrom-Json -Depth 10).PSObject.Properties
+    $MainMenu = (Get-Content .\menus\MainMenu.json | ConvertFrom-Json).PSObject.Properties
     $MenuStack = New-Object System.Collections.ArrayList
     $MultiMenuSelections = New-Object System.Collections.ArrayList
     # generate navigation help
